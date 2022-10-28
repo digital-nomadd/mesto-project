@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Проект Место">
+  <meta name="keywords" content="Third Project">
+  <meta name="author" content="Владислав Фомин">
+  <title>Mesto</title>
+  <link href="pages/index.css" rel="stylesheet">
+</head>
+<body class="page">
+  <div class="page__content">
+    
+    <header class="header">
+      <img src="images/logo.svg" alt="Mesto logo" class="header__logo">
+    </header>
+
+    <main class="main">
+
+      <section class="profile">
+        <img class="profile__avatar" src="/images/avatar.jpg" alt="Profile avatar">
+        <div class="profile__info">
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <button class="profile__edit-button" type="button"></button>
+          <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+        <button class="profile__button" type="button"></button>
+      </section>
+
+      <section class="cards">
+
+        <article class="card">
+          <img class="card__image" src="images/karachaevsk.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <div class="card__caption">
+            <h2 class="card__title">Карачаево-Черкессия</h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="images/elbrus.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <div class="card__caption">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <button class="card__button" type="button"><img src="images/like-icon_static.svg" alt="like-icon"></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="images/dombai.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <div class="card__caption">
+            <h2 class="card__title">Домбай</h2>
+            <button class="card__button" type="button"><img src="images/like-icon_static.svg" alt="like-icon"></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="images/elbrus.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <div class="card__caption">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <button class="card__button" type="button"><img src="images/like-icon_static.svg" alt="like-icon"></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="images/dombai.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <div class="card__caption">
+            <h2 class="card__title">Домбай</h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="images/karachaevsk.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <div class="card__caption">
+            <h2 class="card__title">Карачаево-Черкессия</h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </article>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2022 Mesto Russia</p>
+    </footer>
+
+    <div class="popup popup_opened">
+      <div class="popup__container">
+        <form class="popup__form" method="post" name="mesto-form">
+          <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+          <h2 class="popup__header">Редактировать профиль</h2>
+          <fieldset class="popup__inputs">
+            <input class="popup__input popup__input_el_name" type="text" name="name" placeholder="Жак-Ив Кусто" required>
+            <input class="popup__input popup__input_el_about" type="text" name="about" placeholder="Исследователь океана" required>
+            <button class="popup__button" type="submit" value="Сохранить">Сохранить</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.card__button {
+  background-color: #fff;
+  border: 0;
+  padding: 0;
+  opacity: 1;
+  transition: opacity .3s ease;
+  cursor: pointer;
+  background-image: url(../../../images/like-icon_static.svg);
+  width: 22px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.card__button:hover {
+  opacity: .5;
+}
+
+.card__button:active {
+  background-image: url(../../../images/like-icon_active.svg);
+  opacity: 1;
+}

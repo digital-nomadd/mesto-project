@@ -1,0 +1,25 @@
+.profile__info {
+  max-width: 336px;
+  max-height: 77px;
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  grid-template-rows: 48px 22px;
+  column-gap: 19px;
+  row-gap: 7px;
+  align-items: center;
+  grid-template-areas:
+  "title edit-button"
+  "subtitle ."
+}
+
+@media (max-width: 523px) {
+  .profile__info {
+    margin-bottom: 33px;
+    grid-template-columns: 24px 1fr 24px;
+    grid-template-rows: 48px 22px;
+    column-gap: 10px;
+    grid-template-areas:
+    ". title edit-button"
+    ". subtitle ."
+  }
+}

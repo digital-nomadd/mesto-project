@@ -1,0 +1,9 @@
+.popup__input_el_about {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 523px) {
+  .popup__input_el_about {
+    margin-bottom: 45px;
+  }
+}
