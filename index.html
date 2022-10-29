@@ -7,7 +7,7 @@
   <meta name="keywords" content="Third Project">
   <meta name="author" content="Владислав Фомин">
   <title>Mesto</title>
-  <link href="pages/index.css" rel="stylesheet">
+  <link href="./pages/index.css" rel="stylesheet">
 </head>
 <body class="page">
   <div class="page__content">
@@ -28,7 +28,7 @@
         <button class="profile__button" type="button"></button>
       </section>
 
-      <section class="cards">
+      <section class="cards" aria-label="Места для путешествий по России">
 
         <article class="card">
           <img class="card__image" src="images/karachaevsk.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
@@ -39,31 +39,31 @@
         </article>
 
         <article class="card">
-          <img class="card__image" src="images/elbrus.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <img class="card__image" src="images/elbrus.jpg" alt="Гора Эльбрус">
           <div class="card__caption">
             <h2 class="card__title">Гора Эльбрус</h2>
-            <button class="card__button" type="button"><img src="images/like-icon_static.svg" alt="like-icon"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </article>
 
         <article class="card">
-          <img class="card__image" src="images/dombai.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <img class="card__image" src="images/dombai.jpg" alt="Горы Домбая">
           <div class="card__caption">
             <h2 class="card__title">Домбай</h2>
-            <button class="card__button" type="button"><img src="images/like-icon_static.svg" alt="like-icon"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </article>
 
         <article class="card">
-          <img class="card__image" src="images/elbrus.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <img class="card__image" src="images/elbrus.jpg" alt="Гора Эльбрус">
           <div class="card__caption">
             <h2 class="card__title">Гора Эльбрус</h2>
-            <button class="card__button" type="button"><img src="images/like-icon_static.svg" alt="like-icon"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </article>
 
         <article class="card">
-          <img class="card__image" src="images/dombai.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
+          <img class="card__image" src="images/dombai.jpg" alt="Горы Домбая">
           <div class="card__caption">
             <h2 class="card__title">Домбай</h2>
             <button class="card__button" type="button"></button>
@@ -86,12 +86,12 @@
 
     <div class="popup">
       <div class="popup__container">
+        <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+        <h2 class="popup__header">Редактировать профиль</h2>
         <form class="popup__form" method="post" name="mesto-form">
-          <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
-          <h2 class="popup__header">Редактировать профиль</h2>
           <fieldset class="popup__inputs">
-            <input class="popup__input popup__input_el_name" type="text" name="name" placeholder="Жак-Ив Кусто" required>
-            <input class="popup__input popup__input_el_about" type="text" name="about" placeholder="Исследователь океана" required>
+            <input class="popup__input popup__input_el_name" type="text" name="name" placeholder="Ваше имя" required>
+            <input class="popup__input popup__input_el_about" type="text" name="about" placeholder="О Вас" required>
             <button class="popup__button" type="submit" value="Сохранить">Сохранить</button>
           </fieldset>
         </form>

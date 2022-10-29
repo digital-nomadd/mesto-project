@@ -15,7 +15,7 @@
 @media (max-width: 523px) {
   .profile__info {
     margin-bottom: 33px;
-    grid-template-columns: 24px 1fr 24px;
+    grid-template-columns: 18px minmax(0, 189px) 18px;
     grid-template-rows: 48px 22px;
     column-gap: 10px;
     grid-template-areas:

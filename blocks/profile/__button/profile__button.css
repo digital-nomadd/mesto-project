@@ -4,6 +4,7 @@
   height: 50px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 22px 22px;
   border: 2px solid #fff;
   padding: 0;
   opacity: 1;
@@ -12,6 +13,7 @@
   background-image: url(../../../images/add-icon.svg);
   flex-shrink: 0;
   margin: 0 0 0 auto;
+  border-radius: 2px;
 }
 
 .profile__button:hover {
@@ -20,7 +22,7 @@
 
 @media (max-width: 703px) {
   .profile__button {
-    margin: 0 auto;
     width: 100%;
+    background-size: 16px 16px;
   }
 }
