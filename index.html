@@ -29,62 +29,24 @@
       </section>
 
       <section class="cards" aria-label="Места для путешествий по России">
-
-        <article class="card">
-          <img class="card__image" src="./images/karachaevsk.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
-          <div class="card__caption">
-            <h2 class="card__title">Карачаево-Черкессия</h2>
-            <button class="card__button" type="button"></button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card__image" src="./images/elbrus.jpg" alt="Гора Эльбрус">
-          <div class="card__caption">
-            <h2 class="card__title">Гора Эльбрус</h2>
-            <button class="card__button" type="button"></button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card__image" src="./images/dombai.jpg" alt="Горы Домбая">
-          <div class="card__caption">
-            <h2 class="card__title">Домбай</h2>
-            <button class="card__button" type="button"></button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card__image" src="./images/elbrus.jpg" alt="Гора Эльбрус">
-          <div class="card__caption">
-            <h2 class="card__title">Гора Эльбрус</h2>
-            <button class="card__button" type="button"></button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card__image" src="./images/dombai.jpg" alt="Горы Домбая">
-          <div class="card__caption">
-            <h2 class="card__title">Домбай</h2>
-            <button class="card__button" type="button"></button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card__image" src="./images/karachaevsk.jpg" alt="Старое полуразрушенное здание в густой зелени Карачаевска">
-          <div class="card__caption">
-            <h2 class="card__title">Карачаево-Черкессия</h2>
-            <button class="card__button" type="button"></button>
-          </div>
-        </article>
-
+        <template id="card-template">
+          <article class="card">
+            <button type="button" class="card__delete-button"></button>
+            <img class="card__image" src="" alt="">
+            <div class="card__caption">
+              <h2 class="card__title"></h2>
+              <button class="card__button" type="button"></button>
+            </div>
+          </article>
+        </template>
       </section>
+
     </main>
     <footer class="footer">
       <p class="footer__copyright">© 2022 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
+    <div class="popup popup_type_edit">
       <div class="popup__container">
         <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
         <h2 class="popup__header">Редактировать профиль</h2>
@@ -97,8 +59,30 @@
         </form>
       </div>
     </div>
+
+    <div class="popup popup_type_add">
+      <div class="popup__container">
+        <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+        <h2 class="popup__header">Новое место</h2>
+        <form class="popup__form" method="post" name="mesto-form">
+          <fieldset class="popup__inputs">
+            <input class="popup__input popup__input_el_place" type="text" name="name" placeholder="Название" required>
+            <input class="popup__input popup__input_el_link" type="text" name="about" placeholder="Ссылка на картинку" required>
+            <button class="popup__button" type="submit" value="Создать">Создать</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <section class="popup popup-place">
+      <div class="popup-place__wrapper">
+        <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+        <img class="popup-place__image" src="" alt="">
+        <p class="popup-place__caption"></p>
+      </div>
+    </section>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
