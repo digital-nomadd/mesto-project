@@ -143,7 +143,7 @@ function saveCard(evt) {
   evt.preventDefault();
   const title = profileAddPlaceTitleElement.value;
   const link = profileAddPlaceLinkElement.value;
-  addNewCard(title, link);
+  addNewCard(link, title);
   evt.target.reset();
 
   closePopup(profileAddPlacePopupElement);
